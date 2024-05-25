@@ -6,6 +6,12 @@ class TreeNode:
 
 class Solution:
     def postorder(self, root):
+        """
+        Approach
+        - Visit the left subtree
+        - Visit the right subtree
+        - Visit the node
+        """
         if root: 
             self.postorder(root.left)
             self.postorder(root.right)

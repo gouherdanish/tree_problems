@@ -6,6 +6,12 @@ class TreeNode:
 
 class Solution:
     def inorder(self, root):
+        """
+        Approach
+        - Visit the node
+        - Visit the left subtree
+        - Visit the right subtree
+        """
         if root: 
             print(root.val)
             self.inorder(root.left)
